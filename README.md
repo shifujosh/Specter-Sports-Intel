@@ -7,10 +7,33 @@
 > **Deterministic RAG & Real-Time Verification for Sports Analytics**
 
 [![CI Validation](https://github.com/shifujosh/Specter-Sports-Intel/actions/workflows/ci_validation.yml/badge.svg)](https://github.com/shifujosh/Specter-Sports-Intel/actions/workflows/ci_validation.yml)
+[![npm version](https://img.shields.io/npm/v/specter-cli.svg)](https://www.npmjs.com/package/specter-cli)
 
 A cognitive sports analytics engine that solves the "hallucination problem" in LLMs when dealing with numerical sports data. The system introduces a **Verification Layer** that forces LLM outputs to pass deterministic truth checks against raw data before broadcast.
 
+## Quick Start
+
+Try the analysis workflow in demo mode:
+
+```bash
+# Run directly with npx (no install required)
+npx specter-cli demo
+
+# Or install globally
+npm install -g specter-cli
+specter demo --league nba
+specter info
+```
+
+The CLI demonstrates the full Specter workflow:
+1. **Reconnaissance** - Fetch game data
+2. **Analysis** - Run ensemble voting (Elo + Rules + Bayesian)
+3. **Verification** - Fact-check outputs against ground truth
+4. **Signal** - Generate actionable recommendations
+5. **Output** - Simulate visual asset generation
+
 ---
+
 
 ## The Problem
 
