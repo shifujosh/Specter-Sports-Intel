@@ -1,3 +1,7 @@
+<div align="center">
+  <img src="./assets/specter_header.png" alt="SPECTER: Sports Intelligence & Logic" width="100%" />
+</div>
+
 # Specter Sports Intelligence
 
 > **Deterministic RAG & Real-Time Verification for Sports Analytics**
