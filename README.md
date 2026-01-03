@@ -89,11 +89,7 @@ graph TB
 
 ---
 
-## Live Execution
 
-![Specter Consensus Engine Demo](assets/demo_terminal.png)
-
----
 
 ## Key Innovations
 
