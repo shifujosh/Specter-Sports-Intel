@@ -2,6 +2,8 @@
 
 > **Deterministic RAG & Real-Time Verification for Sports Analytics**
 
+[![CI Validation](https://github.com/shifujosh/Specter-Sports-Intel/actions/workflows/ci_validation.yml/badge.svg)](https://github.com/shifujosh/Specter-Sports-Intel/actions/workflows/ci_validation.yml)
+
 A cognitive sports analytics engine that solves the "hallucination problem" in LLMs when dealing with numerical sports data. The system introduces a **Verification Layer** that forces LLM outputs to pass deterministic truth checks against raw data before broadcast.
 
 ---
