@@ -12,7 +12,7 @@ A cognitive sports analytics engine that solves the "hallucination problem" in L
 
 LLMs are notoriously unreliable with numbers. Ask an AI about sports statistics and you'll get confident, fluent, and often *completely wrong* answers. In sports betting, a single hallucinated stat can cost real money.
 
-```
+```text
 USER: What's the spread for Lakers vs Celtics tonight?
 LLM:  Lakers -3.5 at home. [WRONG - it's actually Celtics -7.5]
 ```
@@ -86,6 +86,12 @@ graph TB
     Visual --> Twitter
     Visual --> Discord
 ```
+
+---
+
+## Live Execution
+
+![Specter Consensus Engine Demo](assets/demo_terminal.png)
 
 ---
 
