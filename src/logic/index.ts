@@ -15,3 +15,4 @@ export {
 } from './elo-model';
 export { VelocityTracker, hasSteam, getSteamDirection, hasLateMovement } from './velocity-tracker';
 export { FactChecker, isValid, getIssueCount } from './fact-checker';
+export { TemporalEngine, hasScheduleSpotRisk, formatTemporalContext } from './temporal-engine';

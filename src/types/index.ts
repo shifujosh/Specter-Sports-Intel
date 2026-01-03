@@ -158,6 +158,26 @@ export interface TemporalContext {
   summary: string;
 }
 
+// Types for temporal-engine.ts
+export type ScheduleSlot = 'NORMAL' | 'B2B' | '3_IN_4' | '4_IN_5';
+
+export interface RestAnalysis {
+  restDays: number;
+  isBackToBack: boolean;
+  isFullRest: boolean;
+  fatigueScore: number;
+  adjustment: number;
+}
+
+export interface TemporalFactors {
+  restDays: number;
+  scheduleSlot: ScheduleSlot;
+  fatigueScore: number;
+  circadianPenalty: number;
+  totalAdjustment: number;
+  description: string;
+}
+
 // ============================================================================
 // Velocity Types
 // ============================================================================

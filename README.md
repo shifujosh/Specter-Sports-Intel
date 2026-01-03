@@ -281,24 +281,25 @@ flowchart TD
 
 ```
 src/
-├── logic/                  # Core intelligence
+├── logic/                  # Core intelligence (open source)
 │   ├── ensemble-voter.ts   # Multi-model consensus
 │   ├── rules-engine.ts     # Situational filters
 │   ├── elo-model.ts        # Rating system
 │   ├── fact-checker.ts     # Verification agent
 │   ├── temporal-engine.ts  # Time-based analysis
 │   └── velocity-tracker.ts # Line movement
-├── connectors/             # Data ingestion
-│   ├── odds-scraper.ts     # Betting lines
-│   ├── stats-connector.ts  # Team/player data
-│   └── ...
-├── generators/             # Visual output
-│   ├── match-card.ts       # Game cards
-│   ├── league-brief.ts     # Daily summaries
-│   └── ...
 ├── types/                  # Type definitions
-└── agent.ts                # Central orchestrator
+│   └── index.ts
+└── index.ts                # Module exports
+
+tests/
+└── logic.test.ts           # Unit tests for logic modules
+
+examples/
+└── analysis_demo.ts        # Usage demonstration
 ```
+
+> **Note:** Connectors, generators, and the central agent are proprietary. This repository contains the open-source logic modules that demonstrate the verification architecture.
 
 ---
 
@@ -317,7 +318,5 @@ The system is designed to fail safely: if verification fails, we regenerate or s
 MIT License - See [LICENSE](LICENSE)
 
 ---
-
-> **Note:** This repository demonstrates the verification architecture. Source code is proprietary.
 
 **[Back to Profile](https://github.com/shifujosh)**
