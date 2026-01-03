@@ -1,15 +1,19 @@
 {
-  "name": "specter-sports-intel",
-  "version": "0.1.0",
-  "description": "Deterministic RAG & Real-Time Verification for Sports Analytics",
+  "name": "specter-cli",
+  "version": "1.0.0",
+  "description": "Specter Sports Intelligence CLI - Deterministic RAG & Real-Time Verification for Sports Analytics",
   "type": "module",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
+  "bin": {
+    "specter": "./bin/specter.js"
+  },
   "scripts": {
     "build": "tsc",
     "test": "vitest run",
     "test:watch": "vitest",
     "demo": "npx tsx examples/analysis_demo.ts",
+    "specter": "npx tsx src/cli/index.ts",
     "typecheck": "tsc --noEmit",
     "lint": "eslint src --ext .ts"
   },
@@ -21,10 +25,19 @@
     "rag",
     "llm",
     "elo",
-    "ensemble"
+    "ensemble",
+    "cli",
+    "specter"
   ],
   "author": "shifujosh",
   "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/shifujosh/Specter-Sports-Intel.git"
+  },
+  "dependencies": {
+    "commander": "^12.1.0"
+  },
   "devDependencies": {
     "@types/node": "^20.10.0",
     "tsx": "^4.7.0",
